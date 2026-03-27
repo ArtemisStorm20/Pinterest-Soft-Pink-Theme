@@ -1,0 +1,17 @@
+/* background */
+body, .mainContainer, .AppBase {
+  background: #FFF6F9 !important; /* soft light pink */
+}
+
+header, nav, .Header, .Navigation {
+  background: #FFFFFF !important; /* white */
+}
+
+.pinWrapper, .Grid, .Pin {
+  background: #f0e2d2 !important; /* beige */
+}
+
+/* text colors */
+*, p, span, a, h1, h2, h3 {
+  color: #ffdef4 !important; /* light pink */
+}

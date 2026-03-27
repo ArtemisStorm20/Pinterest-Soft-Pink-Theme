@@ -6,6 +6,10 @@
     "permissions": [
         "activeTab"
     ],
+    "host_permissions": [
+        "https://www.pinterest.com/*",
+        "http://www.pinterest.com/*"
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {

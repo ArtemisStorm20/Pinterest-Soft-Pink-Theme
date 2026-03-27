@@ -1,3 +1,81 @@
+/* --- YOUTUBE-STYLE PASTEL PINK THEME VOOR PINTEREST --- */
+:root {
+  --pink-bg: #ffe6f2;
+  --pink-header: #ffd6ea;
+  --pink-border: #ffd6ea;
+  --pink-border-darker: #ffb6d9;
+  --pink-shadow: #ffd6ea55;
+  --pink-text: #b86b9c;
+  --pink-btn-bg: #ffd6ea;
+  --pink-btn-text: #b86b9c;
+  --pink-btn-hover: #ffb6d9;
+  --white: #fff;
+}
+
+body, html {
+  background: var(--pink-bg) !important;
+}
+
+header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
+  background: var(--pink-header) !important;
+  box-shadow: 0 2px 8px 0 var(--pink-shadow) !important;
+  border-bottom: 2px solid var(--pink-border) !important;
+  border-radius: 0 0 18px 18px;
+}
+
+main, .mainContainer, .AppBase, .Grid, .Yl-, .XiG {
+  background: var(--pink-bg) !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
+  padding: 16px 0 16px 0 !important;
+}
+
+.pinWrapper, .Pin, [data-test-id="pin"] {
+  background: var(--white) !important;
+  border-radius: 20px !important;
+  border: 2.5px dashed var(--pink-border) !important;
+  box-shadow: none !important;
+  transition: border 0.2s, transform 0.2s;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 18px !important;
+}
+.pinWrapper:hover, .Pin:hover, [data-test-id="pin"]:hover {
+  border: 2.5px solid var(--pink-border-darker) !important;
+  transform: translateY(-2px) scale(1.01);
+}
+
+button, input[type="button"], input[type="submit"], .searchBox, [role="search"] input {
+  background: var(--pink-btn-bg) !important;
+  color: var(--pink-btn-text) !important;
+  border-radius: 18px !important;
+  border: none !important;
+  box-shadow: 0 2px 8px 0 var(--pink-shadow) !important;
+  transition: box-shadow 0.15s, background 0.15s, transform 0.15s;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 1em;
+  padding: 8px 22px !important;
+  margin: 6px 6px !important;
+  outline: none !important;
+  min-width: 64px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, .searchBox:hover, [role="search"] input:hover {
+  background: var(--pink-btn-hover) !important;
+  color: var(--pink-btn-text) !important;
+  box-shadow: 0 4px 16px 0 var(--pink-shadow) !important;
+  transform: scale(1.04);
+}
+
+h1, h2, h3, .tBJ, .Jea, .nJX, .FzC {
+  color: var(--pink-text) !important;
+}
+p, span, a, *, .zI7.iyn.Hsu.tg7.Jea.nJX.FzC, .zI7.iyn.Hsu.tg7.Jea.nJX, .zI7.iyn.Hsu.tg7.Jea, .zI7.iyn.Hsu.tg7, .zI7.iyn.Hsu, .zI7.iyn, .zI7, .Hsu {
+  color: #b86b9c !important;
+}
 /* Verberg alle omringende stijlen rond de rode 'Bewaren' knop */
 button[aria-label*="Bewaren"], button.saveButton, .saveButton, .redButton, button[style*="background-color: rgb(230, 0, 35)"], button[style*="background-color: #e60023"], button[style*="background: rgb(230, 0, 35)"], button[style*="background: #e60023"] {
   background: #e60023 !important;

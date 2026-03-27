@@ -16,7 +16,8 @@
         {
             "matches": ["*://www.pinterest.com/*"],
             "css": ["Css/theme.css"],
-            "js": ["content.js"]
+            "js": ["content.js"],
+            "run_at": "document_idle"
         }
     ]
 }

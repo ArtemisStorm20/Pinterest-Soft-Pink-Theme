@@ -1,17 +1,17 @@
-/* background */
-body, .mainContainer, .AppBase {
-  background: #FFF6F9 !important; /* soft light pink */
+/* Pinterest Soft Pink Theme - FORCE APPLY */
+:root, html, body, .mainContainer, .AppBase {
+  background: #FFF6F9 !important;
 }
 
-header, nav, .Header, .Navigation {
-  background: #FFFFFF !important; /* white */
+header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
+  background: #FFFFFF !important;
 }
 
-.pinWrapper, .Grid, .Pin {
-  background: #f0e2d2 !important; /* beige */
+.pinWrapper, .Grid, .Pin, [data-test-id="pin"], .Yl-, .XiG {
+  background: #f0e2d2 !important;
 }
 
 /* text colors */
-*, p, span, a, h1, h2, h3 {
-  color: #ffdef4 !important; /* light pink */
+*, p, span, a, h1, h2, h3, .tBJ, .Jea, .nJX, .FzC {
+  color: #ffdef4 !important;
 }

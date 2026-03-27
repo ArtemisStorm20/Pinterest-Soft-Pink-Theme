@@ -1,56 +1,223 @@
-
-/* Pinterest Soft Pink Theme - BEAUTIFUL PASTEL LOOK */
-:root, html, body, .mainContainer, .AppBase, .zI7, .Hsu, .zI7.iyn, .zI7.iyn.Hsu, .zI7.iyn.Hsu.tg7, .zI7.iyn.Hsu.tg7.Jea, .zI7.iyn.Hsu.tg7.Jea.nJX, .zI7.iyn.Hsu.tg7.Jea.nJX.FzC {
-  background: #FFF6F9 !important;
+/* Verberg alle omringende stijlen rond de rode 'Bewaren' knop */
+button[aria-label*="Bewaren"], button.saveButton, .saveButton, .redButton, button[style*="background-color: rgb(230, 0, 35)"], button[style*="background-color: #e60023"], button[style*="background: rgb(230, 0, 35)"], button[style*="background: #e60023"] {
+  background: #e60023 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 6px 16px !important;
+  border-radius: 18px !important;
+  font-weight: 700;
+  font-size: 1em;
+  min-width: 48px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  z-index: 10 !important;
 }
+
+/* Verberg alle parent backgrounds/randen direct om de knop */
+button[aria-label*="Bewaren"], button.saveButton, .saveButton, .redButton {
+  box-shadow: none !important;
+}
+button[aria-label*="Bewaren"]:not(:only-child), button.saveButton:not(:only-child), .saveButton:not(:only-child), .redButton:not(:only-child) {
+  background: #e60023 !important;
+}
+button[aria-label*="Bewaren"]:parent, button.saveButton:parent, .saveButton:parent, .redButton:parent {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Specifiek: verwijder achtergrond/rand van directe parent wrappers */
+.saveButton, .redButton, button[aria-label*="Bewaren"] {
+  background-clip: padding-box !important;
+}
+.saveButton, .redButton, button[aria-label*="Bewaren"] {
+  box-shadow: none !important;
+}
+.saveButton, .redButton, button[aria-label*="Bewaren"]:not(:only-child) {
+  background: #e60023 !important;
+}
+.saveButton, .redButton, button[aria-label*="Bewaren"]:parent {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Verberg pseudo-elementen en overlays van parent wrappers */
+.saveButton::before, .saveButton::after, .redButton::before, .redButton::after, button[aria-label*="Bewaren"]::before, button[aria-label*="Bewaren"]::after {
+  display: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+/* Specifieke stijl voor de rode 'Bewaren' knop */
+button[aria-label*="Bewaren"], button.saveButton, .saveButton, .redButton, button[style*="background-color: rgb(230, 0, 35)"], button[style*="background-color: #e60023"], button[style*="background: rgb(230, 0, 35)"], button[style*="background: #e60023"] {
+  background: #e60023 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 10px 28px !important;
+  border-radius: 32px !important;
+  font-weight: 700;
+  font-size: 1.08em;
+  min-width: 64px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+button[aria-label*="Bewaren"]::after, button.saveButton::after, .saveButton::after, .redButton::after {
+  display: none !important;
+}
+:root {
+  --pink-bg: #ffe6f2;
+  --pink-accent: #ffd6ea;
+  --pink-border: #ffb6d9;
+  --pink-shadow: #ffd6ea55;
+  --pink-text: #d48bb6;
+  --pink-hover: #fff6f9;
+}
+body, html {
+  background: var(--pink-bg) !important;
+}
+main, .mainContainer, .AppBase, .Grid, .Yl-, .XiG {
+  background: var(--pink-bg) !important;
+  border-radius: 32px !important;
+  box-shadow: 0 8px 32px 0 var(--pink-shadow) !important;
+  padding: 24px 0 24px 0 !important;
+}
+
+
+/* Pinterest Soft Pink Theme - ENHANCED BEAUTIFUL PASTEL LOOK */
+:root, html, body, .mainContainer, .AppBase, .zI7, .Hsu, .zI7.iyn, .zI7.iyn.Hsu, .zI7.iyn.Hsu.tg7, .zI7.iyn.Hsu.tg7.Jea, .zI7.iyn.Hsu.tg7.Jea.nJX, .zI7.iyn.Hsu.tg7.Jea.nJX.FzC {
+  background: linear-gradient(135deg, #FFF6F9 0%, #ffe6f2 100%) !important;
+  min-height: 100vh;
+  font-family: 'Quicksand', 'Poppins', 'Segoe UI', Arial, sans-serif !important;
+  letter-spacing: 0.02em;
+  scroll-behavior: smooth;
+}
+
 
 header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
-  background: #FFFFFF !important;
-  box-shadow: 0 2px 12px 0 #ffd6ea44 !important;
-  border-bottom: 2px solid #ffd6ea !important;
+  background: linear-gradient(90deg, #fff6f9 60%, #ffd6ea 100%) !important;
+  box-shadow: 0 4px 24px 0 #ffd6ea55, 0 1.5px 0 #ffd6ea inset !important;
+  border-bottom: 2.5px solid #ffd6ea !important;
+  border-radius: 0 0 24px 24px;
+  animation: headerFadeIn 1.2s cubic-bezier(.4,0,.2,1);
 }
 
-.pinWrapper, .Grid, .Pin, [data-test-id="pin"], .Yl-, .XiG {
-  background: #faeee7 !important; /* lichtere beige */
-  border-radius: 18px !important;
-  border: 2px dashed #ffd6ea !important;
-  box-shadow: 0 4px 24px 0 #ffd6ea33 !important;
-  transition: box-shadow 0.2s, border 0.2s;
+@keyframes headerFadeIn {
+  from { opacity: 0; transform: translateY(-24px); }
+  to { opacity: 1; transform: translateY(0); }
 }
+
+
+.pinWrapper, .Pin, [data-test-id="pin"] {
+  background: #fff6f9 !important;
+  border-radius: 28px !important;
+  border: 3px dashed var(--pink-accent) !important;
+  box-shadow: 0 6px 32px 0 var(--pink-shadow), 0 1.5px 0 var(--pink-accent) inset !important;
+  transition: box-shadow 0.2s, border 0.2s, transform 0.2s;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 18px !important;
+}
+.pinWrapper::after, .Pin::after, [data-test-id="pin"]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 28px;
+  border: 2px dotted var(--pink-border);
+  opacity: 0.5;
+}
+
 
 .pinWrapper:hover, .Pin:hover, [data-test-id="pin"]:hover {
-  box-shadow: 0 8px 32px 0 #ffb6d944 !important;
-  border: 2px solid #ffb6d9 !important;
+  box-shadow: 0 16px 48px 0 #ffb6d988, 0 2px 0 var(--pink-accent) inset !important;
+  border: 3px solid var(--pink-border) !important;
+  transform: translateY(-6px) scale(1.035);
+  filter: brightness(1.06) saturate(1.12);
 }
+
 
 /* Buttons en zoekbalk */
 button, input[type="button"], input[type="submit"], .searchBox, [role="search"] input {
-  background: #ffe6f2 !important;
-  color: #d48bb6 !important;
-  border-radius: 12px !important;
-  border: 1.5px solid #ffd6ea !important;
-  box-shadow: 0 2px 8px 0 #ffd6ea33 !important;
-  transition: box-shadow 0.2s, border 0.2s;
+  background: linear-gradient(135deg, #fff6f9 60%, #ffd6ea 100%) !important;
+  color: var(--pink-text) !important;
+  border-radius: 28px !important;
+  border: 2.5px solid var(--pink-accent) !important;
+  box-shadow: 0 4px 18px 0 var(--pink-shadow), 0 1.5px 0 #fff6f9 inset !important;
+  transition: box-shadow 0.18s, border 0.18s, transform 0.18s, background 0.18s;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 1em;
+  padding: 7px 18px !important;
+  margin: 6px 6px !important;
+  outline: none !important;
+  position: relative;
+  overflow: hidden;
+  min-width: 64px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+button::after, input[type="button"]::after, input[type="submit"]::after, .searchBox::after, [role="search"] input::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  border: 2px dashed #ffd6ea99;
+  opacity: 0.3;
+  pointer-events: none;
 }
 button:hover, input[type="button"]:hover, input[type="submit"]:hover, .searchBox:hover, [role="search"] input:hover {
-  background: #ffd6ea !important;
+  background: linear-gradient(135deg, #ffd6ea 60%, #fff6f9 100%) !important;
   color: #b86b9c !important;
-  border: 1.5px solid #ffb6d9 !important;
+  border: 2.5px solid var(--pink-border) !important;
+  transform: scale(1.07);
+  box-shadow: 0 8px 28px 0 #ffb6d988 !important;
+  filter: brightness(1.07) saturate(1.13);
 }
 
-/* text colors */
+
 *, p, span, a, h1, h2, h3, .tBJ, .Jea, .nJX, .FzC, .zI7.iyn.Hsu.tg7.Jea.nJX.FzC, .zI7.iyn.Hsu.tg7.Jea.nJX, .zI7.iyn.Hsu.tg7.Jea, .zI7.iyn.Hsu.tg7, .zI7.iyn.Hsu, .zI7.iyn, .zI7, .Hsu {
+  color: var(--pink-text) !important;
+  text-shadow: 0 1px 0 #fff6f9, 0 2px 8px #ffd6ea33;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 12px #ffd6ea44;
   color: #ffb6d9 !important;
 }
+a:hover {
+  color: #b86b9c !important;
+  text-decoration: underline wavy var(--pink-accent);
+  background: #fff6f9cc;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
 
-/* Subtiele pastel border om de hele pagina */
+
 body::before {
   content: '';
   position: fixed;
   z-index: 9999;
   pointer-events: none;
-  top: 0; left: 0; right: 0; bottom: 0;
-  border: 6px dotted #ffd6ea;
-  border-radius: 24px;
+  top: 8px; left: 8px; right: 8px; bottom: 8px;
+  border: 5px dashed var(--pink-accent);
+  border-radius: 40px;
   box-sizing: border-box;
+  box-shadow: 0 0 32px 0 var(--pink-shadow), 0 0 0 12px #fff6f9cc;
+  animation: borderPulse 2.5s infinite alternate cubic-bezier(.4,0,.2,1);
 }
+
+@keyframes borderPulse {
+  from { box-shadow: 0 0 32px 0 var(--pink-shadow), 0 0 0 12px #fff6f9cc; }
+  to { box-shadow: 0 0 48px 0 #ffd6ea99, 0 0 0 18px #ffe6f299; }
+}
+
+/* Geen confetti/dots overlay meer, effen achtergrond */

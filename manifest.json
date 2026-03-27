@@ -3,7 +3,7 @@
     "name": "Pinterest Soft Pink Theme",
     "version": "1.0",
     "description": "A soft pink theme for Pinterest.",
-    "persmissions": [
+    "permissions": [
         "activeTab"
     ],
     "action": {
@@ -15,7 +15,7 @@
     "content_scripts": [
         {
             "matches": ["*://www.pinterest.com/*"],
-            "css": ["theme.css"],
+            "css": ["Css/theme.css"],
             "js": ["content.js"]
         }
     ]

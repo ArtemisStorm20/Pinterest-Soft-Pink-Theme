@@ -18,7 +18,10 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://www.pinterest.com/*"],
+            "matches": [
+                "*://www.pinterest.com/*",
+                "*://nl.pinterest.com/*"
+            ],
             "css": ["Css/theme.css"],
             "js": ["content.js"],
             "run_at": "document_idle"

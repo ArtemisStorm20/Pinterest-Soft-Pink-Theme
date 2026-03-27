@@ -13,27 +13,42 @@
 }
 
 body, html {
-  background: var(--pink-bg) !important;
-}
-
-header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
-  background: var(--pink-header) !important;
-  box-shadow: 0 2px 8px 0 var(--pink-shadow) !important;
-  border-bottom: 2px solid var(--pink-border) !important;
-  border-radius: 0 0 18px 18px;
-}
-
-main, .mainContainer, .AppBase, .Grid, .Yl-, .XiG {
-  background: var(--pink-bg) !important;
+  /* Kleuren aangepast naar YouTube pastel roze thema */
+  :root {
+    --pink-bg: #fff2f7;
+    --pink-header: #ffd8e6;
+    --pink-border: #ffd8e6;
+    --pink-border-darker: #ffd0df;
+    --pink-shadow: #ffd8e655;
+    --pink-text: #5c5c5c;
+    --pink-btn-bg: #ffd0df;
+    --pink-btn-text: #ffffff;
+    --pink-btn-hover: #ff99bb;
+    --white: #fff;
+  }
   border-radius: 24px !important;
   box-shadow: none !important;
   padding: 16px 0 16px 0 !important;
+  body, html {
+    background-color: var(--pink-bg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    color: var(--pink-text) !important;
+  }
 }
 
 .pinWrapper, .Pin, [data-test-id="pin"] {
   background: var(--white) !important;
   border-radius: 20px !important;
   border: 2.5px dashed var(--pink-border) !important;
+  header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
+    background: var(--pink-header) !important;
+    box-shadow: 0 2px 8px 0 var(--pink-shadow) !important;
+    border-bottom: 2.5px solid var(--pink-border) !important;
+    border-radius: 0 0 18px 18px;
+  }
   box-shadow: none !important;
   transition: border 0.2s, transform 0.2s;
   overflow: hidden;
@@ -44,30 +59,31 @@ main, .mainContainer, .AppBase, .Grid, .Yl-, .XiG {
   border: 2.5px solid var(--pink-border-darker) !important;
   transform: translateY(-2px) scale(1.01);
 }
-
-button, input[type="button"], input[type="submit"], .searchBox, [role="search"] input {
-  background: var(--pink-btn-bg) !important;
-  color: var(--pink-btn-text) !important;
-  border-radius: 18px !important;
-  border: none !important;
-  box-shadow: 0 2px 8px 0 var(--pink-shadow) !important;
-  transition: box-shadow 0.15s, background 0.15s, transform 0.15s;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  font-size: 1em;
-  padding: 8px 22px !important;
-  margin: 6px 6px !important;
-  outline: none !important;
-  min-width: 64px;
-  max-width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  /* Kaarten (pins) in YouTube stijl */
+  .pinWrapper, .Pin, [data-test-id="pin"] {
+    background: #fff !important;
+    border-radius: 25px !important;
+    border: 3px dashed var(--pink-border) !important;
+    box-shadow: none !important;
+    transition: border 0.2s, transform 0.2s;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px !important;
+    padding: 15px !important;
+  }
+  /* Geen extra overlay rand meer, alleen border */
 }
 button:hover, input[type="button"]:hover, input[type="submit"]:hover, .searchBox:hover, [role="search"] input:hover {
   background: var(--pink-btn-hover) !important;
   color: var(--pink-btn-text) !important;
   box-shadow: 0 4px 16px 0 var(--pink-shadow) !important;
   transform: scale(1.04);
+  main, .mainContainer, .AppBase, .Grid, .Yl-, .XiG {
+    background: var(--pink-bg) !important;
+    border-radius: 24px !important;
+    box-shadow: none !important;
+    padding: 16px 0 16px 0 !important;
+  }
 }
 
 h1, h2, h3, .tBJ, .Jea, .nJX, .FzC {

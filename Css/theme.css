@@ -280,22 +280,6 @@ a:hover {
 }
 
 
-body::before {
-  content: '';
-  position: fixed;
-  z-index: 9999;
-  pointer-events: none;
-  top: 8px; left: 8px; right: 8px; bottom: 8px;
-  border: 5px dashed var(--pink-accent);
-  border-radius: 40px;
-  box-sizing: border-box;
-  box-shadow: 0 0 32px 0 var(--pink-shadow), 0 0 0 12px #fff6f9cc;
-  animation: borderPulse 2.5s infinite alternate cubic-bezier(.4,0,.2,1);
-}
-
-@keyframes borderPulse {
-  from { box-shadow: 0 0 32px 0 var(--pink-shadow), 0 0 0 12px #fff6f9cc; }
-  to { box-shadow: 0 0 48px 0 #ffd6ea99, 0 0 0 18px #ffe6f299; }
-}
+/* ...existing code... */
 
 /* Geen confetti/dots overlay meer, effen achtergrond */

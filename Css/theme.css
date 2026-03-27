@@ -1,5 +1,5 @@
 /* Pinterest Soft Pink Theme - FORCE APPLY */
-:root, html, body, .mainContainer, .AppBase {
+:root, html, body, .mainContainer, .AppBase, .zI7, .Hsu, .zI7.iyn, .zI7.iyn.Hsu, .zI7.iyn.Hsu.tg7, .zI7.iyn.Hsu.tg7.Jea, .zI7.iyn.Hsu.tg7.Jea.nJX, .zI7.iyn.Hsu.tg7.Jea.nJX.FzC {
   background: #FFF6F9 !important;
 }
 
@@ -12,6 +12,6 @@ header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
 }
 
 /* text colors */
-*, p, span, a, h1, h2, h3, .tBJ, .Jea, .nJX, .FzC {
+*, p, span, a, h1, h2, h3, .tBJ, .Jea, .nJX, .FzC, .zI7.iyn.Hsu.tg7.Jea.nJX.FzC, .zI7.iyn.Hsu.tg7.Jea.nJX, .zI7.iyn.Hsu.tg7.Jea, .zI7.iyn.Hsu.tg7, .zI7.iyn.Hsu, .zI7.iyn, .zI7, .Hsu {
   color: #ffdef4 !important;
 }

@@ -72,7 +72,7 @@ body, html {
     padding: 15px !important;
   }
   /* Geen extra overlay rand meer, alleen border */
-}
+
 button:hover, input[type="button"]:hover, input[type="submit"]:hover, .searchBox:hover, [role="search"] input:hover {
   background: var(--pink-btn-hover) !important;
   color: var(--pink-btn-text) !important;

@@ -11,7 +11,7 @@ header, nav, .Header, .Navigation, [data-test-id="header"], [role="banner"] {
 }
 
 .pinWrapper, .Grid, .Pin, [data-test-id="pin"], .Yl-, .XiG {
-  background: #f0e2d2 !important;
+  background: #faeee7 !important; /* lichtere beige */
   border-radius: 18px !important;
   border: 2px dashed #ffd6ea !important;
   box-shadow: 0 4px 24px 0 #ffd6ea33 !important;
